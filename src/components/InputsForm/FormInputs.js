@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import Card from "../UI/Card";
 import styles from "./FormInputs.module.css";
 import Button from "../UI/Button";
-import Wrapper from "../Helpers/Wrapper";
+
 import ErrorModal from "../UI/ErrorModal";
 
 const FormInputs = (props) => {
@@ -88,7 +88,7 @@ const FormInputs = (props) => {
   };
 
   return (
-    <Wrapper>
+    <Fragment>
       {error && (
         <ErrorModal
           onConfirm={errorHandler}
@@ -153,7 +153,7 @@ const FormInputs = (props) => {
           <Button type="submit">Submit</Button>
         </form>
       </Card>
-    </Wrapper>
+    </Fragment>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 
 import FormInputs from "./components/InputsForm/FormInputs";
 import NewPayslip from "./components/NewPayslip/NewPayslip";
@@ -47,7 +47,7 @@ function App() {
   //
 
   return (
-    <div>
+    <Fragment>
       {showPayslip && (
         <FormInputs
           onAddPayslip={addPayslipHandler}
@@ -65,7 +65,7 @@ function App() {
           onCancel={hidePayslipCard}
         />
       )}
-    </div>
+    </Fragment>
   );
 }
 
