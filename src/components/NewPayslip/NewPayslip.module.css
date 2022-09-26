@@ -1,0 +1,14 @@
+.payslip {
+  margin: 1rem auto;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.payslipControls {
+  margin: 0 0 10px 10px;
+}
+
+.buttonControls {
+  display: inline-flex;
+}
